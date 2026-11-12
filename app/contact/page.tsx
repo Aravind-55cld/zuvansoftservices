@@ -93,10 +93,10 @@ export default function ContactPage() {
                         Official Inquiries
                       </div>
                       <a
-                        href="mailto:contact@zuvansoftsol.com"
+                        href="mailto:contact@zuvansoftservices.com"
                         className="font-bold text-base text-slate-900 hover:text-amber-700 transition-colors break-all"
                       >
-                        contact@zuvansoftsol.com
+                        contact@zuvansoftservices.com
                       </a>
                     </div>
                   </div>

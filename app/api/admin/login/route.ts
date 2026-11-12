@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       return NextResponse.json({
         success: true,
         user: {
-          email: email || "admin@zuvansoftsol.com",
+          email: email || "admin@zuvansoftservices.com",
           role: "master_admin",
         },
         token: "zuvan-master-session-token",

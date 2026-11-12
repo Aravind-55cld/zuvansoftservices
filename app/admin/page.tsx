@@ -40,7 +40,7 @@ export default function AdminDashboardPage() {
   const router = useRouter();
   const { showToast } = useToast();
 
-  const [adminEmail, setAdminEmail] = useState("admin@zuvansoftsol.com");
+  const [adminEmail, setAdminEmail] = useState("admin@zuvansoftservices.com");
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<"jobs" | "applications" | "schema">("jobs");
 

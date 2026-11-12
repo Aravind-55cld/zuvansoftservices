@@ -157,11 +157,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:contact@zuvansoftsol.com"
+                href="mailto:contact@zuvansoftservices.com"
                 className="flex items-center gap-2.5 hover:text-amber-400 transition-colors group"
               >
                 <Mail className="w-4 h-4 text-amber-400 group-hover:text-amber-300" />
-                <span className="break-all">contact@zuvansoftsol.com</span>
+                <span className="break-all">contact@zuvansoftservices.com</span>
               </a>
 
               <div className="flex items-start gap-2.5 text-slate-400">

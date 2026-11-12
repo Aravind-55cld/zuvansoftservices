@@ -10,7 +10,7 @@ import { Lock, Mail, ArrowRight, ShieldCheck, ArrowLeft, KeyRound, CheckCircle2 
 export default function AdminLoginPage() {
   const router = useRouter();
   const { showToast } = useToast();
-  const [email, setEmail] = useState("admin@zuvansoftsol.com");
+  const [email, setEmail] = useState("admin@zuvansoftservices.com");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [checkingAuth, setCheckingAuth] = useState(true);
@@ -47,7 +47,7 @@ export default function AdminLoginPage() {
       }
 
       localStorage.setItem("zuvan_admin_token", data.token || "admin-active");
-      localStorage.setItem("zuvan_admin_email", email || "admin@zuvansoftsol.com");
+      localStorage.setItem("zuvan_admin_email", email || "admin@zuvansoftservices.com");
       showToast("Signed in successfully! Redirecting to Dashboard...", "success");
       router.push("/admin");
     } catch (err: any) {
@@ -119,7 +119,7 @@ export default function AdminLoginPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@zuvansoftsol.com"
+                  placeholder="admin@zuvansoftservices.com"
                   required
                   className="w-full pl-10 pr-4 py-3 text-sm rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition"
                 />
