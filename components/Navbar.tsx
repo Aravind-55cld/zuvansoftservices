@@ -48,6 +48,10 @@ export default function Navbar() {
     { href: "/it-consulting", label: "01 | IT Consulting" },
     { href: "/staffing", label: "02 | Staffing Solutions" },
     { href: "/recruitment", label: "03 | Direct Recruitment" },
+    { href: "/services#web-development", label: "04 | Web Development" },
+    { href: "/services#digital-marketing", label: "05 | Digital Marketing" },
+    { href: "/services#certifications", label: "06 | Certifications & Training" },
+    { href: "/services#contract-projects", label: "07 | Contract Projects" },
   ];
 
   const isActive = (href: string) => {
@@ -100,11 +104,11 @@ export default function Navbar() {
           {/* Header Actions */}
           <div className="flex items-center gap-3 sm:gap-4">
             <a
-              href="tel:+914048219900"
+              href="tel:040-27898999"
               className="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-slate-700 hover:text-blue-700 py-2 px-3 rounded-lg border border-slate-200 hover:border-slate-300 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-blue-600" />
-              <span>Direct Line</span>
+              <span>040-27898999</span>
             </a>
 
             <Link href="/contact" className="btn-primary py-2.5 px-4 text-xs sm:text-sm">

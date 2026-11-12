@@ -119,6 +119,26 @@ export default function Footer() {
                   03 | Direct Recruitment
                 </Link>
               </li>
+              <li>
+                <Link href="/services#web-development" className="hover:text-amber-400 transition-colors">
+                  04 | Web Development
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#digital-marketing" className="hover:text-amber-400 transition-colors">
+                  05 | Digital Marketing
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#certifications" className="hover:text-amber-400 transition-colors">
+                  06 | Certifications &amp; Training
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#contract-projects" className="hover:text-amber-400 transition-colors">
+                  07 | Contract Projects
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -129,11 +149,11 @@ export default function Footer() {
             </h4>
             <div className="space-y-3 text-sm">
               <a
-                href="tel:+914048219900"
+                href="tel:040-27898999"
                 className="flex items-center gap-2.5 hover:text-amber-400 transition-colors group"
               >
                 <Phone className="w-4 h-4 text-blue-400 group-hover:text-amber-400" />
-                <span>+91 40 4821 9900</span>
+                <span>040-27898999</span>
               </a>
 
               <a

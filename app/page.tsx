@@ -14,6 +14,9 @@ import {
   Target,
   Clock,
   Compass,
+  Laptop,
+  TrendingUp,
+  GraduationCap,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -69,7 +72,7 @@ export default function HomePage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link href="/services" className="btn-hero-outline py-4 px-6 text-sm">
-                <span>Explore Our 3 Core Services</span>
+                <span>Explore All Services &amp; Capabilities</span>
                 <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
@@ -116,10 +119,10 @@ export default function HomePage() {
                 Core Capabilities
               </span>
               <h2 className="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight">
-                Support Designed Around Your Needs
+                Complete Technology &amp; Workforce Solutions
               </h2>
               <p className="text-slate-600 mt-3 text-base leading-relaxed">
-                We focus on three core service areas for Indian businesses and organisations. Each practice is staffed by seasoned domain practitioners.
+                From core IT consulting, technical staffing, and recruitment to full-stack web engineering, digital marketing, certifications, and turnkey contract projects.
               </p>
             </div>
             <Link
@@ -292,6 +295,129 @@ export default function HomePage() {
               <Link href="/recruitment" className="btn-secondary w-full justify-center">
                 <span>Explore Recruitment</span>
                 <ChevronRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Specialized Practices Row (Web Dev, Digital Marketing, Certifications, Contract Projects) */}
+          <div className="mt-12 pt-12 border-t border-slate-200">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-700 font-heading">
+                  Expanded Capabilities
+                </span>
+                <h3 className="font-heading font-bold text-xl sm:text-2xl text-slate-900 mt-1">
+                  Specialized Engineering &amp; Growth Solutions
+                </h3>
+              </div>
+              <Link
+                href="/services"
+                className="text-xs font-bold text-blue-700 hover:text-blue-800 inline-flex items-center gap-1 group"
+              >
+                <span>View All 7 Services on Directory</span>
+                <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Web Development */}
+              <Link
+                href="/services#web-development"
+                className="group p-6 rounded-2xl bg-slate-50 hover:bg-emerald-50/50 border border-slate-200 hover:border-emerald-300 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Laptop className="w-5 h-5" />
+                  </div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700 font-heading">
+                    04 | Engineering
+                  </span>
+                  <h4 className="font-heading font-bold text-base text-slate-900 mt-1 mb-2">
+                    Web Development
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Custom Next.js &amp; React apps, high-throughput cloud APIs, and scalable enterprise web portals.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-bold text-emerald-700">
+                  <span>Explore Web Dev</span>
+                  <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+
+              {/* Digital Marketing */}
+              <Link
+                href="/services#digital-marketing"
+                className="group p-6 rounded-2xl bg-slate-50 hover:bg-rose-50/50 border border-slate-200 hover:border-rose-300 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <TrendingUp className="w-5 h-5" />
+                  </div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-rose-700 font-heading">
+                    05 | Growth
+                  </span>
+                  <h4 className="font-heading font-bold text-base text-slate-900 mt-1 mb-2">
+                    Digital Marketing
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Technical SEO, high-conversion PPC campaigns, B2B lead generation, and quantitative CRO.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-bold text-rose-700">
+                  <span>Explore Marketing</span>
+                  <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+
+              {/* Certifications & Training */}
+              <Link
+                href="/services#certifications"
+                className="group p-6 rounded-2xl bg-slate-50 hover:bg-indigo-50/50 border border-slate-200 hover:border-indigo-300 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <GraduationCap className="w-5 h-5" />
+                  </div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-indigo-700 font-heading">
+                    06 | Upskilling
+                  </span>
+                  <h4 className="font-heading font-bold text-base text-slate-900 mt-1 mb-2">
+                    Certifications &amp; Training
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Cloud certification tracks (AWS/Azure), DevOps bootcamps, and corporate batch training.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-bold text-indigo-700">
+                  <span>Explore Certifications</span>
+                  <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </Link>
+
+              {/* Contract Projects */}
+              <Link
+                href="/services#contract-projects"
+                className="group p-6 rounded-2xl bg-slate-50 hover:bg-amber-50/50 border border-slate-200 hover:border-amber-300 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <Briefcase className="w-5 h-5" />
+                  </div>
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-amber-700 font-heading">
+                    07 | Delivery
+                  </span>
+                  <h4 className="font-heading font-bold text-base text-slate-900 mt-1 mb-2">
+                    Contract Projects
+                  </h4>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Turnkey milestone delivery, fixed-scope SOW execution, and SLA-backed engineering squads.
+                  </p>
+                </div>
+                <div className="mt-4 pt-3 border-t border-slate-200/60 flex items-center justify-between text-xs font-bold text-amber-700">
+                  <span>Explore Contract Projects</span>
+                  <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </div>
               </Link>
             </div>
           </div>

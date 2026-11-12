@@ -76,10 +76,10 @@ export default function ContactPage() {
                         Direct Line
                       </div>
                       <a
-                        href="tel:+914048219900"
+                        href="tel:040-27898999"
                         className="font-bold text-base text-slate-900 hover:text-blue-700 transition-colors"
                       >
-                        +91 40 4821 9900
+                        040-27898999
                       </a>
                     </div>
                   </div>
